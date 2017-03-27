@@ -1,0 +1,28 @@
+#
+#Site Settings
+title:               RandomThoughts
+tagline:             A professional amateur blog
+description:
+baseurl:            #"/"
+url:                "https://flamacue.github.io"
+github:
+  url:               #"https://flamacue.github.io"
+author:
+  name:              "Adam K. Sumner"
+  email:             "asumner101@gmail.com"
+  github:            "flamacue"
+  linkedin:          "adamkeithsumner"
+navigation:
+- title: About
+  url: /about
+- title: Writing
+  url: /writing
+
+paginate:            5
+disqus:              #"your-disqus"
+
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+gems:                [jekyll-paginate]
