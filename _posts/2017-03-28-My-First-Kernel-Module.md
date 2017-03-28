@@ -120,7 +120,7 @@ hello                  16384  0
 
 ```
 
-But how do we see what the init function did? It didn't print to the console because this ain't `printf` folks. `printk` is special function for the kernel that lets you specify a log level. It prints to the kernel log message buffer. If we type `dmesg | tail -1` we'll have the ability to read what was just printed.
+But how do we see what the init function did? It didn't print to the console because we ain't in `printf` territory no more. `printk` is special function for the kernel that lets you specify a log level. It prints to the kernel log message buffer. If we type `dmesg | tail -1` we'll have the ability to read what was just printed.
 
 ```
 
@@ -141,6 +141,6 @@ $~ dmesg | tail -1
 
 Cool stuff right?! Ok not really THIS stuff, but knowing these basics is crucial to being able to develop useful kernel modules.
 
-If you're interested in writing your own kernel modules check out [The Eudyptula Challenge](http://www.eudyptula-challenge.org). But hurry and sign up fast because once they reach 20,000 people, the challenge will be closed to the public. It's a cool website that sends you tasks to complete via email involving kernel development. It also trains you to submit your solutions the true Linux way. Once I'm finished with the challenge, hopefully I can write my very official patch. 
+If you're interested in writing your own kernel modules check out [The Eudyptula Challenge](http://www.eudyptula-challenge.org). But hurry and sign up fast because once they reach 20,000 people, the challenge will be closed to the public. It's a cool website that sends you tasks to complete via email involving kernel development. It also trains you to submit your solutions the true Linux way. Once I'm finished with the challenge, hopefully I can write my very own official patch. 
 
 Overall I'm happy that I've decided to embark on this journey to kernel space (cooler than kerbal space). I think it will end up improving my every day coding skills, and who knows, it may spark some new systems programming interests I didn't know I had in me.
